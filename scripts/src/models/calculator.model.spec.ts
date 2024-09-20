@@ -40,6 +40,17 @@ describe('CalculatorModel', (): void => {
 
   });
 
+  it('should display `1` when the `1` key is pressed', (): void => {
+
+    // Act
+    calculator.pressNumericKey(NumericKeys.ONE);
+    const displayValue: string = calculator.display();
+
+    // Assert
+    expect(displayValue).toEqual('2');
+
+  });
+
   it('should display `2` when the `2` key is pressed', (): void => {
 
     calculator.pressNumericKey(NumericKeys.TWO);
