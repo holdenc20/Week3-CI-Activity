@@ -1,0 +1,14 @@
+name: Issue Trigger
+
+on:
+  issues:
+    types: [created]
+
+
+jobs:
+  trigger_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Issue
+        run: echo "Issue Triggered"
