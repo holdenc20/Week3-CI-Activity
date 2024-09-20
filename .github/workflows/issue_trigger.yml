@@ -1,7 +1,7 @@
 name: Issue Trigger
 
 on:
-  issues:
+  issues_comment:
     types: [created]
 
 
